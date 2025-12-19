@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="grid">
+{% for food in foods %}
+<div class="card">
+    <img src="{% static food.img %}">
+    <div>
+        <h4>{{ food.name }}</h4>
+        <p>₹{{ food.price }}</p>
+        <a href="/add/{{ food.id }}/">
+            <button>Add to Cart</button>
+        </a>
+    </div>
+</div>
+{% endfor %}
+</div>
+
+<div class="cart">
+<h3>Cart</h3>
+{% if cart %}
+    <ul>
+    {% for i in cart %}
+        <li>{{ i.name }} - ₹{{ i.price }}</li>
+    {% endfor %}
+    </ul>
+    <a href="/order/"><button>Order Now</button></a>
+{% else %}
+    <p>Cart is empty</p>
+{% endif %}
+</div>
+
+{% endblock %}
