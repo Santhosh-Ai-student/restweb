@@ -236,12 +236,12 @@ def logout_view(request):
     return redirect("login")
 ```
 ## OUTPUT:
-![alt text](<restaurant/restaurant_app/static/images/Screenshot 2025-12-19 101214.png>)
+
 ![alt text](<restaurant/restaurant_app/static/images/Screenshot 2025-12-19 102132.png>)
 ![alt text](<restaurant/restaurant_app/static/images/Screenshot 2025-12-19 102203.png>)
 ![alt text](<restaurant/restaurant_app/static/images/Screenshot 2025-12-19 102216.png>)
 ![alt text](<restaurant/restaurant_app/static/images/Screenshot 2025-12-19 102240.png>)
-![alt text](<restaurant/restaurant_app/static/images/Screenshot 2025-12-19 102240.png>)
+
 ![alt text](<restaurant/restaurant_app/static/images/Screenshot 2025-12-19 102333.png>)
 ![alt text](<restaurant/restaurant_app/static/images/Screenshot 2025-12-19 102346.png>)
 
